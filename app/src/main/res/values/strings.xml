@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">SwissArmy</string>
+    <string name="open_task1">Open Task1</string>
+    <string name="start">Start</string>
+    <string name="task1">Task1</string>
+    <string name="task2">Task2</string>
+    <string name="task3">Task3</string>
+    <string name="task4">Task4</string>
+    <string name="task5">Task5</string>
+    <string name="counter">0:00</string>
+    <string name="end">End</string>
+    <string name="zero">0/125</string>
+    <string name="best">Best</string>
+    <string name="latest">Latest</string>
+</resources>
