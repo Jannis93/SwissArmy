@@ -2,6 +2,11 @@ package com.example.swissarmy.models;
 
 import android.os.CountDownTimer;
 
+/**
+ * @author Jannis Thaler
+ * @version 1.0.0
+ * @date 16.11.2020
+ */
 public abstract class CountUpTimer extends CountDownTimer {
     private final long duration;
 

@@ -10,6 +10,11 @@ import android.widget.TextView;
 import com.example.swissarmy.R;
 import com.example.swissarmy.models.CountUpTimer;
 
+/**
+ * @author Jannis Thaler
+ * @version 1.0.0
+ * @date 16.11.2020
+ */
 public class Task4 extends AppCompatActivity {
 
     private int points;
@@ -39,6 +44,9 @@ public class Task4 extends AppCompatActivity {
 
     }
 
+    /**
+     * Startet den Timer
+     */
     public void startTask4() {
         if (timerRunning){
             timer.cancel();
@@ -56,6 +64,10 @@ public class Task4 extends AppCompatActivity {
         }
     }
 
+    /**
+     * Updates timer
+     * @param msecond
+     */
     private void updateTimer(long msecond) {
         time = (int) msecond / 1000;
         int min = (int) msecond / 60000;
@@ -71,6 +83,10 @@ public class Task4 extends AppCompatActivity {
         textView4.setText(displayTime);
     }
 
+    /**
+     * Öffnet nächsten Task mit Aufgabe 5
+     * @param view
+     */
     public void openTask5(View view) {
 
         getPoints();
@@ -79,6 +95,9 @@ public class Task4 extends AppCompatActivity {
         startActivity(intent);
     }
 
+    /**
+     * Berrechnet die Punktzahl anhand der Zeit
+     */
     private void getPoints() {
         if (timerRunning){
             timer.cancel();

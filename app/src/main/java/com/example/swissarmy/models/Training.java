@@ -2,6 +2,11 @@ package com.example.swissarmy.models;
 
 import com.orm.SugarRecord;
 
+/**
+ * @author Jannis Thaler
+ * @version 1.0.0
+ * @date 16.11.2020
+ */
 public class Training extends SugarRecord{
 
     private Long id;

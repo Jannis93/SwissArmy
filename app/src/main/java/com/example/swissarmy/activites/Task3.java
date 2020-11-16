@@ -13,6 +13,11 @@ import android.widget.TextView;
 import com.example.swissarmy.R;
 import com.example.swissarmy.models.CountUpTimer;
 
+/**
+ * @author Jannis Thaler
+ * @version 1.0.0
+ * @date 16.11.2020
+ */
 public class Task3 extends AppCompatActivity {
 
     private int points;
@@ -41,6 +46,9 @@ public class Task3 extends AppCompatActivity {
         points = i.getIntExtra("Points", 0);
     }
 
+    /**
+     * Startet den Timer
+     */
     public void startTask3() {
         if (timerRunning){
             timer.cancel();
@@ -59,6 +67,10 @@ public class Task3 extends AppCompatActivity {
 
     }
 
+    /**
+     * Updates timer und erstellt Notification nach 10 und 20 Sekunden.
+     * @param msecond
+     */
     private void updateTimer(long msecond) {
         time = (int) msecond / 1000;
         int min = (int) msecond / 60000;
@@ -84,6 +96,10 @@ public class Task3 extends AppCompatActivity {
         }
     }
 
+    /**
+     * Öffnet nächsten Task mit Aufgabe 4
+     * @param view
+     */
     public void openTask4(View view) {
 
         getPoints();
@@ -92,6 +108,9 @@ public class Task3 extends AppCompatActivity {
         startActivity(intent);
     }
 
+    /**
+     * Berrechnet die Punktzahl anhand der Zeit
+     */
     private void getPoints() {
         if (timerRunning){
             timer.cancel();

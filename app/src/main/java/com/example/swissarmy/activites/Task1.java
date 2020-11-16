@@ -9,6 +9,11 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import com.example.swissarmy.R;
 
+/**
+ * @author Jannis Thaler
+ * @version 1.0.0
+ * @date 16.11.2020
+ */
 public class Task1 extends AppCompatActivity {
 
     private int points;
@@ -22,6 +27,10 @@ public class Task1 extends AppCompatActivity {
         textTask1 = (EditText) findViewById(R.id.textTask1);
     }
 
+    /**
+     * Öffnet nächsten Task mit Aufgabe 2
+     * @param view
+     */
     public void openTask2(View view) {
         double value;
 
@@ -37,6 +46,9 @@ public class Task1 extends AppCompatActivity {
         startActivity(intent);
     }
 
+    /**
+     * Berrechnet die Punktzahl anhand der Meter
+     */
     public void getPoints(double value) {
         if (value > 1 && value < 1.95){
             //ungenügend

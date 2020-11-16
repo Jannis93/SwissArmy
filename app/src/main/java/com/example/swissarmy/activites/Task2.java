@@ -9,6 +9,11 @@ import android.os.Bundle;
 import com.example.swissarmy.R;
 import com.orm.SugarContext;
 
+/**
+ * @author Jannis Thaler
+ * @version 1.0.0
+ * @date 16.11.2020
+ */
 public class Task2 extends AppCompatActivity {
 
     private int points;
@@ -25,6 +30,10 @@ public class Task2 extends AppCompatActivity {
         points = i.getIntExtra("Points", 0);
     }
 
+    /**
+     * Öffnet nächsten Task mit Aufgabe 3
+     * @param view
+     */
     public void openTask3(View view) {
         double value;
 
@@ -40,6 +49,9 @@ public class Task2 extends AppCompatActivity {
         startActivity(intent);
     }
 
+    /**
+     * Berrechnet die Punktzahl anhand der Meter
+     */
     private void getPoints(double value) {
         if (value > 4 && value < 4.80){
             //ungenügend
